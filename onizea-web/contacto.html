@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contacto - Onizea</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <div class="container header-content">
+      <div class="logo">Onizea</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="quienes-somos.html">Quiénes somos</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="sectores.html">Sectores</a></li>
+          <li><a href="casos-de-exito.html">Casos de éxito</a></li>
+          <li><a href="unete-a-onizea.html">Únete a Onizea</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section style="padding: 4rem 0;">
+    <div class="container">
+      <h1 style="text-align: center; margin-bottom: 2rem;">Contacto</h1>
+      <p style="text-align: center; margin-bottom: 2rem;">
+        Cuéntanos cómo podemos ayudarte. Ya sea para impulsar tu negocio o para formar parte de nuestro equipo, estamos aquí para escucharte y ofrecerte la mejor solución.
+      </p>
+
+      <form id="contactForm" style="max-width: 600px; margin: 0 auto;">
+        <div class="form-group">
+          <label for="tipo">¿Cómo podemos ayudarte?</label>
+          <select id="tipo" name="tipo" required>
+            <option value="empresa">Quiero contratar servicios</option>
+            <option value="talento">Quiero trabajar en Onizea</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div class="form-group">
+          <label for="empresa">Empresa</label>
+          <input type="text" id="empresa" name="empresa" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="mensaje">Cuéntanos más sobre tu proyecto o interés</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn" style="width: 100%;">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Onizea. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
