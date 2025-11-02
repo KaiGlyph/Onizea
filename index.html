@@ -5,8 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Onizea - Tecnología a medida que transforma tu negocio</title>
   <meta name="description" content="Onizea ofrece soluciones tecnológicas a medida con 22 años de experiencia. Especialistas en sectores financiero e inmobiliario. +1200 profesionales y 34 centros en España.">
-  <link rel="icon" href="images/favicon.ico">
+
+  <!-- Open Graph / Redes sociales -->
+  <meta property="og:title" content="Onizea - Tecnología a medida que transforma tu negocio">
+  <meta property="og:description" content="+1200 profesionales apasionados | 22 años transformando empresas | 34 centros en España">
+  <meta property="og:image" content="mages/og-onizea.jpg">
+  <meta property="og:url" content="https://onizea.es">
+  <meta property="og:type" content="website">
+
+  <!-- Preconexión a Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="Images/Logo Onizea Fondo Transparente.ico">
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -37,10 +49,26 @@
       <h1>Tecnología a medida que transforma tu negocio</h1>
       <p>¿Pierdes tiempo con procesos manuales o sistemas obsoletos? En Onizea combinamos 22 años de experiencia con innovación real para impulsar tu eficiencia, seguridad y crecimiento.</p>
       <p class="hero-tagline">Crazy about technology</p>
-      <a href="contacto.html" class="btn-primary">Solicita tu asesoramiento gratuito</a>
+      <div class="hero-cta-group">
+        <a href="contacto.html" class="btn-primary">Solicita asesoramiento</a>
+        <a href="unete-a-onizea.html" class="btn-secondary">Únete a nuestro equipo</a>
+      </div>
+      
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-number">22+</div>
+          <div class="stat-label">Años de experiencia</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">500+</div>
+          <div class="stat-label">Proyectos exitosos</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">99.9%</div>
+          <div class="stat-label">Uptime garantizado</div>
+        </div>
+      </div>
     </div>
-    <div class="hero-wave"></div>
-    <div class="hero-wave animated"></div>
   </section>
 
   <!-- Sectores -->
@@ -50,23 +78,74 @@
       <p class="sectors-text">
         Con raíces en los sectores financiero e inmobiliario, llevamos nuestra experiencia a cualquier empresa que busque modernizar sus procesos, mejorar su experiencia digital o acelerar su transformación tecnológica con un partner de confianza.
       </p>
+          
+      <div class="sectors-grid">
+        <div class="sector-card">
+          <div class="sector-icon-wrapper">
+            <div class="sector-icon-circle">
+              <svg class="sector-icon" viewBox="0 0 24 24">
+                <rect x="3" y="7" width="18" height="12" rx="2"/>
+                <path d="M3 11h18M7 7v-3h10v3"/>
+                <circle cx="12" cy="15" r="2"/>
+              </svg>
+            </div>
+          </div>
+          <h3 class="sector-title">Financiero</h3>
+          <p class="sector-description">Soluciones seguras y escalables para banca, seguros y servicios financieros con cumplimiento normativo.</p>
+        </div>
+        
+        <div class="sector-card">
+          <div class="sector-icon-wrapper">
+            <div class="sector-icon-circle">
+              <svg class="sector-icon" viewBox="0 0 24 24">
+                <path d="M12 3L3 8v11h18V8l-9-5z"/>
+                <path d="M9 21v-6h6v6"/>
+                <path d="M9 11h6"/>
+              </svg>
+            </div>
+          </div>
+          <h3 class="sector-title">Inmobiliario</h3>
+          <p class="sector-description">Plataformas digitales para gestión de propiedades, ventas y experiencias inmobiliarias modernas.</p>
+        </div>
+        
+        <div class="sector-card">
+          <div class="sector-icon-wrapper">
+            <div class="sector-icon-circle">
+              <svg class="sector-icon" viewBox="0 0 24 24">
+                <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"/>
+                <path d="M12 8v4l2 2"/>
+              </svg>
+            </div>
+          </div>
+          <h3 class="sector-title">Salud</h3>
+          <p class="sector-description">Sistemas tecnológicos para clínicas, hospitales y servicios de salud con enfoque en privacidad.</p>
+        </div>
+        
+
     </div>
   </section>
 
   <!-- Credenciales -->
   <section class="credentials">
     <div class="container">
+      <h2 class="section-title">Nuestro impacto</h2>
       <div class="credentials-grid">
         <div class="credentials-item">
-          <span>1200+</span>
-          <p>Profesionales tecnológicos</p>
+          <div>
+            <span class="counter-plus">+</span><span class="counter" data-target="1200">0</span>
+          </div>
+          <p>Profesionales apasionados</p>
         </div>
         <div class="credentials-item">
-          <span>22</span>
+          <div>
+            <span class="counter" data-target="22">0</span>
+          </div>
           <p>Años transformando empresas</p>
         </div>
         <div class="credentials-item">
-          <span>34</span>
+          <div>
+            <span class="counter" data-target="34">0</span>
+          </div>
           <p>Centros en toda la península</p>
         </div>
       </div>
@@ -81,19 +160,19 @@
   <section class="benefits">
     <div class="container">
       <h2 class="section-title">¿Por qué una solución tecnológica a medida cambia tu negocio?</h2>
-      <div class="benefit-item">
+      <div class="benefit-item animate-on-scroll">
         <div>Reduce errores y riesgos con sistemas robustos y seguros.</div>
       </div>
-      <div class="benefit-item">
+      <div class="benefit-item animate-on-scroll">
         <div>Optimiza tiempo y procesos mediante automatización inteligente.</div>
       </div>
-      <div class="benefit-item">
+      <div class="benefit-item animate-on-scroll">
         <div>Convierte tus datos en decisiones con analítica avanzada, IA y dashboards intuitivos.</div>
       </div>
-      <div class="benefit-item">
+      <div class="benefit-item animate-on-scroll">
         <div>Protege tu negocio con ciberseguridad integrada desde el primer día.</div>
       </div>
-      <div class="benefit-item">
+      <div class="benefit-item animate-on-scroll">
         <div>Escala sin límites con arquitecturas modernas, APIs y microservicios en la nube.</div>
       </div>
     </div>
@@ -105,40 +184,48 @@
       <h2 class="section-title">Confían en nosotros</h2>
       <div class="carousel">
         <div class="carousel-track">
-          <!-- Logos repetidos para efecto continuo -->
-          <img src="images/client1.png" alt="Cliente 1">
-          <img src="images/client2.png" alt="Cliente 2">
-          <img src="images/client3.png" alt="Cliente 3">
-          <img src="images/client4.png" alt="Cliente 4">
-          <img src="images/client5.png" alt="Cliente 5">
-          <img src="images/client1.png" alt="Cliente 1">
-          <img src="images/client2.png" alt="Cliente 2">
-          <img src="images/client3.png" alt="Cliente 3">
-          <img src="images/client4.png" alt="Cliente 4">
-          <img src="images/client5.png" alt="Cliente 5">
+          <img src="images/client1.png" alt="Cliente 1" loading="lazy">
+          <img src="images/client2.png" alt="Cliente 2" loading="lazy">
+          <img src="images/client3.png" alt="Cliente 3" loading="lazy">
+          <img src="images/client4.png" alt="Cliente 4" loading="lazy">
+          <img src="images/client5.png" alt="Cliente 5" loading="lazy">
+          <img src="images/client1.png" alt="Cliente 1" loading="lazy">
+          <img src="images/client2.png" alt="Cliente 2" loading="lazy">
+          <img src="images/client3.png" alt="Cliente 3" loading="lazy">
+          <img src="images/client4.png" alt="Cliente 4" loading="lazy">
+          <img src="images/client5.png" alt="Cliente 5" loading="lazy">
         </div>
+      </div>
+
+      <!-- ✅ Casos de éxito breves -->
+      <div class="testimonials-mini">
+        <p class="testimonial">“Automatizamos los procesos de onboarding para un banco líder, reduciendo tiempos en un 70%.”</p>
+        <p class="testimonial">“Desarrollamos una plataforma SaaS para una inmobiliaria nacional, gestionando +50.000 contratos.”</p>
       </div>
     </div>
   </section>
 
-<!-- CTA Estratégico -->
-<section class="cta-strategic">
-  <div class="container">
-    <h2>¿Listo para transformar tu negocio con tecnología hecha para ti?</h2>
-    <a href="contacto.html" class="btn-primary">Habla con un experto</a>
-  </div>
-</section>
+  <!-- CTA Estratégico -->
+  <section class="cta-strategic">
+    <div class="container">
+      <h2 class="section-title">¿Listo para transformar tu negocio con tecnología hecha para ti?</h2>
+      <a href="contacto.html" class="btn-primary">Habla con un experto</a>
+    </div>
+  </section>
 
-<!-- Footer -->
-<footer>
-  <div class="footer-wave"></div>
-  <div class="container">
-    <p>© 2025 Onizea. Todos los derechos reservados.</p>
-    <p class="footer-links">
-      <a href="#">Aviso Legal</a> |
-      <a href="#">Política de Privacidad</a>
-    </p>
-  </div>
-</footer>
+  <!-- Footer -->
+  <footer>
+    <div class="footer-wave"></div>
+    <div class="container">
+      <p>© 2025 Onizea. Todos los derechos reservados.</p>
+      <p class="footer-human">¿Tienes dudas? Escríbenos a <a href="mailto:hola@onizea.es">hola@onizea.es</a></p>
+      <p class="footer-links">
+        <a href="#">Aviso Legal</a> |
+        <a href="#">Política de Privacidad</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
