@@ -4,13 +4,24 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contacto - Onizea</title>
+  <meta name="description" content="Contacta con Onizea para consultoría tecnológica gratuita o para unirte a nuestro equipo de +1200 profesionales.">
+  <link rel="icon" href="Images/Logo Onizea Fondo Transparente.ico">
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+  <!-- Header -->
   <header>
     <div class="container header-content">
-      <div class="logo">Onizea</div>
-      <nav>
+      <div class="logo">
+        <img src="Images/Logo Onizea Fondo Transparente.png" alt="Onizea Logo" />
+        <a href="index.html" class="logo-text">Onizea</a>
+      </div>
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+      <nav class="main-nav">
         <ul>
           <li><a href="index.html">Inicio</a></li>
           <li><a href="quienes-somos.html">Quiénes somos</a></li>
@@ -18,54 +29,171 @@
           <li><a href="sectores.html">Sectores</a></li>
           <li><a href="casos-de-exito.html">Casos de éxito</a></li>
           <li><a href="unete-a-onizea.html">Únete a Onizea</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="contacto.html" class="active">Contacto</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <section style="padding: 4rem 0;">
+  <!-- Sección de Contacto -->
+  <section class="contact-section">
     <div class="container">
-      <h1 style="text-align: center; margin-bottom: 2rem;">Contacto</h1>
-      <p style="text-align: center; margin-bottom: 2rem;">
-        Cuéntanos cómo podemos ayudarte. Ya sea para impulsar tu negocio o para formar parte de nuestro equipo, estamos aquí para escucharte y ofrecerte la mejor solución.
+      <h1 class="section-title">Contacto</h1>
+      <p class="contact-intro">
+        Cuéntanos cómo podemos ayudarte. Ya sea para impulsar tu transformación digital o para formar parte de nuestro equipo de +1200 profesionales, estamos aquí para escucharte.
       </p>
 
-      <form id="contactForm" style="max-width: 600px; margin: 0 auto;">
-        <div class="form-group">
-          <label for="tipo">¿Cómo podemos ayudarte?</label>
-          <select id="tipo" name="tipo" required>
-            <option value="empresa">Quiero contratar servicios</option>
-            <option value="talento">Quiero trabajar en Onizea</option>
-          </select>
+      <!-- Selector de tipo de contacto -->
+      <div class="contact-type-selector">
+        <button class="contact-tab active" data-tab="empresa">Soy empresa</button>
+        <button class="contact-tab" data-tab="talento">Busco trabajar en Onizea</button>
+      </div>
+
+      <!-- Formulario para Empresas -->
+      <div id="form-empresa" class="contact-form-container active">
+        <div class="form-header">
+          <h2>Agenda una consultoría gratuita</h2>
+          <p>Con 22 años transformando empresas en sectores regulados, Onizea combina solidez y agilidad para impulsar tu transformación digital con resultados reales.</p>
         </div>
-        <div class="form-group">
-          <label for="nombre">Nombre</label>
-          <input type="text" id="nombre" name="nombre" required>
+        <form id="contactFormEmpresa" class="contact-form">
+          <div class="form-group">
+            <label for="nombre-empresa">Nombre completo *</label>
+            <input type="text" id="nombre-empresa" name="nombre" required placeholder="Tu nombre">
+          </div>
+          <div class="form-group">
+            <label for="cargo-empresa">Cargo *</label>
+            <input type="text" id="cargo-empresa" name="cargo" required placeholder="CEO, CTO, Director...">
+          </div>
+          <div class="form-group">
+            <label for="empresa-empresa">Empresa *</label>
+            <input type="text" id="empresa-empresa" name="empresa" required placeholder="Nombre de tu empresa">
+          </div>
+          <div class="form-group">
+            <label for="email-empresa">Email corporativo *</label>
+            <input type="email" id="email-empresa" name="email" required placeholder="tu@empresa.com">
+          </div>
+          <div class="form-group">
+            <label for="telefono-empresa">Teléfono</label>
+            <input type="tel" id="telefono-empresa" name="telefono" placeholder="+34 600 000 000">
+          </div>
+          <div class="form-group">
+            <label for="sector-empresa">Sector</label>
+            <select id="sector-empresa" name="sector">
+              <option value="">Selecciona un sector</option>
+              <option value="financiero">Financiero</option>
+              <option value="inmobiliario">Inmobiliario</option>
+              <option value="retail">Retail</option>
+              <option value="industria">Industria</option>
+              <option value="servicios">Servicios</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="mensaje-empresa">Cuéntanos sobre tu proyecto o necesidad *</label>
+            <textarea id="mensaje-empresa" name="mensaje" rows="5" required placeholder="Describe brevemente tu desafío tecnológico o necesidad..."></textarea>
+          </div>
+          <button type="submit" class="btn-primary" style="width: 100%; margin-top: 1rem;">Agenda una consultoría gratuita</button>
+        </form>
+      </div>
+
+      <!-- Formulario para Talento -->
+      <div id="form-talento" class="contact-form-container">
+        <div class="form-header">
+          <h2>Descubre nuestras oportunidades laborales</h2>
+          <p>En Onizea no solo desarrollas software: transformas negocios. Únete a una comunidad de +1200 profesionales que marcan la diferencia con tecnología hecha para resolver problemas reales.</p>
         </div>
-        <div class="form-group">
-          <label for="empresa">Empresa</label>
-          <input type="text" id="empresa" name="empresa" required>
-        </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required>
-        </div>
-        <div class="form-group">
-          <label for="mensaje">Cuéntanos más sobre tu proyecto o interés</label>
-          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-        </div>
-        <button type="submit" class="btn" style="width: 100%;">Enviar</button>
-      </form>
+        <form id="contactFormTalento" class="contact-form">
+          <div class="form-group">
+            <label for="nombre-talento">Nombre completo *</label>
+            <input type="text" id="nombre-talento" name="nombre" required placeholder="Tu nombre">
+          </div>
+          <div class="form-group">
+            <label for="email-talento">Email *</label>
+            <input type="email" id="email-talento" name="email" required placeholder="tu@email.com">
+          </div>
+          <div class="form-group">
+            <label for="telefono-talento">Teléfono</label>
+            <input type="tel" id="telefono-talento" name="telefono" placeholder="+34 600 000 000">
+          </div>
+          <div class="form-group">
+            <label for="perfil-talento">Perfil técnico *</label>
+            <select id="perfil-talento" name="perfil" required>
+              <option value="">Selecciona tu perfil</option>
+              <option value="desarrollador">Desarrollador</option>
+              <option value="arquitecto">Arquitecto de Software</option>
+              <option value="consultor">Consultor IT</option>
+              <option value="data-scientist">Data Scientist</option>
+              <option value="ciberseguridad">Especialista en Ciberseguridad</option>
+              <option value="devops">DevOps</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="experiencia-talento">Años de experiencia</label>
+            <select id="experiencia-talento" name="experiencia">
+              <option value="">Selecciona</option>
+              <option value="0-2">0-2 años</option>
+              <option value="2-5">2-5 años</option>
+              <option value="5-10">5-10 años</option>
+              <option value="10+">Más de 10 años</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="mensaje-talento">Cuéntanos sobre ti y tu interés en Onizea *</label>
+            <textarea id="mensaje-talento" name="mensaje" rows="5" required placeholder="Tecnologías que dominas, proyectos en los que te gustaría trabajar..."></textarea>
+          </div>
+          <div class="form-group">
+            <label for="cv-talento">Enlace a tu CV o LinkedIn (opcional)</label>
+            <input type="url" id="cv-talento" name="cv" placeholder="https://linkedin.com/in/tuperfil o enlace a CV">
+          </div>
+          <button type="submit" class="btn-primary" style="width: 100%; margin-top: 1rem;">Enviar solicitud</button>
+        </form>
+      </div>
     </div>
   </section>
 
+  <!-- Footer -->
   <footer>
+    <div class="footer-wave"></div>
     <div class="container">
       <p>© 2025 Onizea. Todos los derechos reservados.</p>
+      <p class="footer-human">¿Tienes dudas? Escríbenos a <a href="mailto:hola@onizea.es">hola@onizea.es</a></p>
+      <p class="footer-links">
+        <a href="#">Aviso Legal</a> |
+        <a href="#">Política de Privacidad</a>
+      </p>
     </div>
   </footer>
 
   <script src="js/main.js"></script>
+  <script>
+    // Cambio entre formularios
+    document.querySelectorAll('.contact-tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        const tabType = tab.dataset.tab;
+        
+        // Actualizar tabs
+        document.querySelectorAll('.contact-tab').forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        
+        // Actualizar formularios
+        document.querySelectorAll('.contact-form-container').forEach(form => form.classList.remove('active'));
+        document.getElementById(`form-${tabType}`).classList.add('active');
+      });
+    });
+
+    // Manejo de envío de formularios
+    document.getElementById('contactFormEmpresa').addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('¡Gracias por tu interés! Te contactaremos pronto para agendar tu consultoría gratuita.');
+      e.target.reset();
+    });
+
+    document.getElementById('contactFormTalento').addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('¡Gracias por tu interés en formar parte de Onizea! Revisaremos tu perfil y te contactaremos pronto.');
+      e.target.reset();
+    });
+  </script>
 </body>
 </html>
